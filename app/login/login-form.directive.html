@@ -1,0 +1,30 @@
+      <form  name="form" class="form-signin" ng-show="vm.isLoginForm" ng-submit="vm.SingIn()" role="form">
+          <div class="form-group" ng-class="{ 'has-error': vm.isDenied || vm.isBanned  }" >
+            <label for="inputLogin" class="sr-only">Login</label>
+            <input type="text" id="inputLogin" class="form-control" placeholder="Login" autofocus required ng-model="vm.login" >
+          </div>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="vm.pass">
+          <div class="alert alert-danger" ng-show="vm.isBanned && BannedTime" >
+            <h6> <b>Banned!</b> You've exceeded limit of requests <b> <ban-timer count="BannedTime"></ban-timer>  </b> </h6>
+          </div>
+          <div class="btn-control" align="center">
+            <button type="submit"  class="btn btn-primary btn-lg btn-outline " style="width:150px" ng-disabled="form.$invalid || vm.dataLoad || BannedTime">Login &#8594;</button>
+          </div>
+        </form>
+
+
+        <form class="form-signin" ng-show="vm.isHotpForm" ng-submit="vm.EnterCode()">
+          <h4 class="form-signin-heading">Two step authentication required for this user login:</h4>
+          <div class="form-group" ng-class="{ 'has-error': vm.isHotpWrong || vm.isBanned  }" >
+            <label for="inputHotp" class="sr-only">Hotp</label>
+            <input type="text" id="inputHotp" class="form-control" placeholder="Enter two step auth code" required ng-model="vm.hotp">
+          </div>
+          <div class="alert alert-danger" ng-show="vm.isBanned && BannedTime">
+              <h6> <b>Banned!</b> You've exceeded limit of requests <b> <ban-timer count="BannedTime"></ban-timer>  </b> </h6>
+          </div>
+          <div class="btn-control" align="center">
+            <button type="submit" class="btn btn-primary btn-lg btn-outline " ng-disabled="form.$invalid || vm.dataLoad || BannedTime">Continue &#8594;</button>
+          </div>
+        </form>
+        

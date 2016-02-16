@@ -1,0 +1,19 @@
+      <div class="state-area" ng-hide="vm.dataLoad || vm.isLogged">
+ 
+          <img src="assets/img/fire-ico.png">
+          <h1 >Login</h1>
+
+      </div>
+      <div class="state-area" ng-show="vm.isLogged">
+
+          <img src="assets/img/ok-ico.png">
+          <h1 >Sucsessful logged</h1>
+        </div>
+
+      <div class="state-area" ng-show="vm.dataLoad">
+
+          <button type="button" class="btn btn-primary btn-lg btn-outline loading-btn "  >
+            <span class="glyphicon glyphicon-cog glyphicon-cog-animate" style="font-size: 200%;"></span>
+          </button>
+
+      </div>

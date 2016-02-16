@@ -1,0 +1,14 @@
+{
+	"g00dv1n" : {
+		"Password" : "test",
+		"Hotp"   :  4123
+	} ,
+	"user" : {
+		"Password" : "test"
+	} ,
+
+	"root" :{
+		 "Password": "myVerySecretPassword",
+ 		 "Hotp":4523
+	}
+}

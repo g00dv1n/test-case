@@ -1,0 +1,187 @@
+.btn:focus {
+  outline: none;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+    border-radius: 25px;
+
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: 	#ffffff;
+}
+
+.glyphicon-cog-animate {
+    -animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    -webkit-animation: spinw .7s infinite linear;
+    -moz-animation: spinm .7s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+  
+@-webkit-keyframes spinw {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spinm {
+    from { -moz-transform: rotate(0deg);}
+    to { -moz-transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading
+{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+
+}
+.form-signin input {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.form-signin input {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.form-signin .btn-control
+{
+
+}
+
+.state-area 
+{
+  max-width: 500px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  height: 100px;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+
+
+
+}
+
+.state-area1 img
+{
+    float:left;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.state-area1 h1
+{
+  position: relative;
+  top: 25%;
+
+}
+
+
+
+.just-center
+{
+
+
+}
+
+
+.state-area  img
+{
+
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: -40px;
+
+
+}
+.state-area  h1
+{
+  position: relative;
+  top: 15px;
+  left: -40px;
+  display: inline-block; 
+  
+
+}
+
+.loading-btn 
+{
+  position: relative;
+  top: 15px;
+  width: 150px;
+  height:50px;
+
+}
+
+
+
+
