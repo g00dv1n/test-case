@@ -32,5 +32,5 @@
 
 ### Связь со мной 
 
-- ##### skype: alexandr.brick
-- ##### email: g00dv1n.private @ gmail.com
+- skype: alexandr.brick
+- email: g00dv1n.private @ gmail.com
